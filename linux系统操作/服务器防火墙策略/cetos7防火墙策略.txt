@@ -1,0 +1,14 @@
+1.启动防火墙
+	systemctl sart firewalld.service
+
+2.指定ip段
+	firewall-cmd --permanent --add-rich-rule="rule family="ipv4" source address="  IP地址/24 "  accept"
+	
+3.重启防火墙
+	systemctl restart firewalld.service 
+
+4.查看配置
+	firewall-cmd --list-all
+
+5.删除规则
+	firewall-cmd --配置的规则

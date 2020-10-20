@@ -1,0 +1,9 @@
+编辑防火墙文件
+vi /ect/sysconfig/iptables
+
+在中间添加
+
+-A INPUT -I eth0 -s ip地址 -p tcp -j ACCEPT
+
+重启防火墙
+service iptales restart

@@ -1,0 +1,21 @@
+启动防火墙
+service iptables start
+
+配置文件在
+/etc/sysconfig/iptables
+
+
+只允许某个地址能访问
+iptables -A INPUT -s IP地址 -p tcp --dport 端口 -j ACCEPT
+
+保存配置
+service iptables save
+
+
+重启防火墙
+service iptables restart
+
+查看配置
+iptables -L INPUT
+
+
