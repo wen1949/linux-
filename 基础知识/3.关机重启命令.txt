@@ -1,0 +1,13 @@
+关机重启命令：
+
+shutdown  -h now 立刻关机
+shutdown  -h 1       一分钟后自动关机
+shutdown  -r  now  现在重启动计算机
+
+halt                 关机
+
+reboot      重启计算机
+
+sync                 把内存的数据同步到磁盘
+
+logout               注销登录

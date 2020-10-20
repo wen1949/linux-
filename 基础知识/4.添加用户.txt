@@ -1,0 +1,25 @@
+useradd 用户名
+
+修改密码
+passwd 用户名
+
+删除用户，但保留家目录
+userdel  用户名
+
+删除用户，但保留用户主目录
+userdel -r 用户名
+
+查询用户信息
+id 用户名
+
+添加用户组
+groupadd 组名
+
+删除组
+groupdel 组名
+
+在组里添加用户
+useradd -g 用户组  用户名
+
+修改用户组
+usermod -g 用户组 用户名

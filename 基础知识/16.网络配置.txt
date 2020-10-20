@@ -1,0 +1,11 @@
+固定ip地址
+编辑文件   vim /etc/syscinfig/network-scrip/ifcfg-eth0
+将IP地址设置为静态的，IP地址位192.168.184.130
+ONBOOT=yes
+
+BOTPROTO=static  指定固定ip
+
+修改后重启服务
+service network restart
+
+reboot

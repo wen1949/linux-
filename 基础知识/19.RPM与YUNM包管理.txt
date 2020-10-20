@@ -1,0 +1,35 @@
+rpm包的管理
+格式为rpm，像.exe文件
+
+rpm包的简单查询指令
+查询已经安装的列表：rpm -qal | grep 包名
+
+删除包
+rpm -e 软件包
+强制删除
+rpm -e --nodeps foo
+
+安装包
+rpm -ivh RPM包全路径名称
+i=install 安装
+v=verbose 提示
+h=hash	进度条
+
+rpm -ql 软件包名：查询软件包中的文件
+rpm -qf 文件全路径名  查询文件所属的软件包
+rpm -qf /ect/passwd
+rpm -qf /root/install.log
+
+
+yum 管理器
+基于rpm包管理，能从指定服务器下载rpm包并且一次安装所有软件包
+yum的基本指令
+查询yum服务器是否有需要的安装软件
+	yum list | grep xx 软件列表
+安装指定的yum包
+	yum install xxx
+
+
+
+
+
